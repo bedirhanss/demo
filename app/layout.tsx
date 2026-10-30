@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VitrinaOps | E-Ticaret Danışmanlığı, Görsel Stüdyo & Ürün Yönetimi",
+  title: "VitrinaOps | E-commerce product and catalog support",
   description:
-    "E-ticaret mağazanızın tüm angarya operasyonunu bize bırakın. Birebir danışmanlık, profesyonel ürün görseli düzenleme ve altyapı bağımsız ürün yükleme & katalog yönetimi.",
+    "We turn your product list into polished images and a store-ready catalog. Product uploads and e-commerce operations support.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="h-full antialiased">
+    <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
