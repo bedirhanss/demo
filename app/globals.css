@@ -103,3 +103,7 @@ html,body{margin:0!important;padding:0!important}body{display:block!important;mi
 
 
 
+
+.main-nav{gap:20px}.main-nav a{white-space:nowrap}
+@media(max-width:1000px){.main-nav{gap:12px}.main-nav a{font-size:10px}}
+@media(max-width:800px){.main-nav{gap:8px}.main-nav a{font-size:9px}}
