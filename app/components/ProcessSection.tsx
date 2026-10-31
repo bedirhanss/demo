@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const steps = [
   { title: "Magaza durumunuzu paylasin", tag: "SIZDEN", text: "Mevcut bir e-ticaret magazaniz var mi, yoksa yeni mi kuracaksiniz? Magazaniz varsa hangi platformda oldugunu belirtin.", detail: "Mevcut magaza veya yeni baslangic" },
-  { title: "Urun kapsam?n? belirleyin", tag: "SIZDEN", text: "Eklenecek ya da duzenlenecek urun adedini ve elinizdeki urun listesini paylasin. Listeyi birlikte gozden gecirelim.", detail: "Urun adedi ve ham liste" },
+  { title: "Urun kapsamını belirleyin", tag: "SIZDEN", text: "Eklenecek ya da duzenlenecek urun adedini ve elinizdeki urun listesini paylasin. Listeyi birlikte gozden gecirelim.", detail: "Urun adedi ve ham liste" },
   { title: "Gorsel yonunuzu secin", tag: "SIZDEN", text: "Calismak istediginiz gorsel temasini anlatin. Varsa begendiginiz bir referans gorsel ve ham urun fotograflarinizi gonderin.", detail: "Tema, referans ve fotograflar" },
   { title: "Urunlerinizi yayina hazirlayalim", tag: "BIZDEN", text: "Gorselleri iyilestirelim, SEO odakli urun baslik ve bilgilerini hazirlayalim, urunleri magazaniza ekleyip son kontrolleri yapalim.", detail: "Gorsel, icerik ve urun girisi" },
 ];

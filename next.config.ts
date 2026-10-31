@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+﻿import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    useTypeScriptCli: false,
+    workerThreads: true,
+  },
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {

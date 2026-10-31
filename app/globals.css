@@ -57,6 +57,9 @@
 
 .site-footer .footer-art .footer-art-word{color:#7fa88a!important;-webkit-text-fill-color:#7fa88a!important}
 
+/* Keep all footer columns aligned on desktop. */
+@media(min-width:601px){.site-footer>.footer-main{grid-template-columns:minmax(0,1.25fr) minmax(130px,.7fr) minmax(190px,1fr) minmax(155px,.75fr);gap:34px}.site-footer>.footer-main>.footer-reach{grid-column:auto}}
+
 
 html,body{margin:0!important;padding:0!important}body{display:block!important;min-height:100vh!important}.site-footer{margin-bottom:0!important;padding-bottom:0!important}.site-footer>.footer-art{margin-bottom:0!important}
 

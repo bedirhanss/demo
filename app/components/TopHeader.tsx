@@ -43,7 +43,7 @@ export default function TopHeader() {
       <div className="top-header-inner" style={{ maxWidth: "none", width: "100%", padding: isMobile ? "0 34px" : "0 max(calc((100vw - 1240px) / 2 + 32px), 32px)", justifyContent: isMobile ? "flex-start" : "space-between", minHeight: isMobile ? 32 : 34 }}>
         <p className="top-header-promo" style={isMobile ? { display: "block", width: "100%", margin: 0, textAlign: "left", fontSize: 11, lineHeight: 1, whiteSpace: "nowrap" } : undefined}>E-ticaret operasyon destegi</p>
         <div className="top-header-countdown" aria-label="Geri sayim" style={isMobile ? { display: "none" } : undefined}>
-          <span>Baslangica kalan</span>
+          <span>Fırsata Son !</span>
           <span className="top-countdown">
             {units.map(({ value, label }) => (
               <span className="top-countdown-unit" key={label}>
