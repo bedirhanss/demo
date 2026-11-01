@@ -6,6 +6,7 @@ import DeliveryCalculator from "./components/DeliveryCalculator";
 import FAQSection from "./components/FAQSection";
 import ProcessSection from "./components/ProcessSection";
 import ServicesSection from "./components/ServicesSection";
+import VisualThemesSection from "./components/VisualThemesSection";
 
 
 const galleryItems = [
@@ -52,7 +53,7 @@ export default function Home() {
               <div className="hero-card-topline"><span>VITRINAOPS STUDIO</span><span>01 / 01</span></div>
               <div className="hero-card-copy"><span>PRODUCT PHOTOGRAPHY</span><h2>Every detail,<br />ready to sell.</h2><p>Studio retouching ? Catalog-ready</p></div>
             </article>
-            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div /><div /><div /><div /><div /><div /><div /><div />
           </div>
           <div className="hero-services-list" aria-label="Product support services">
             <div className="hero-service-row"><span>01</span><i /><span>PRODUCT PHOTO RETOUCHING</span></div>
@@ -66,6 +67,7 @@ export default function Home() {
 
 
       <ServicesSection />
+      <VisualThemesSection />
 
       <section className="gallery-section" id="galeri">
         <div className="gallery-heading">
@@ -77,12 +79,12 @@ export default function Home() {
         </div>
         <div className="gallery-grid">
           {galleryItems.map((item, index) => (
-            <article className="gallery-card" key={item.image} style={{ marginTop: index % 2 === 1 ? 36 : index % 5 === 2 ? 14 : 0, borderRadius: 5, backgroundColor: "#fff", boxShadow: "0 12px 28px rgba(23, 33, 29, 0.11)" }}>
-              <div className="gallery-image-wrap" style={{ position: "relative", overflow: "hidden", aspectRatio: "3 / 4", width: "100%", borderRadius: 4, backgroundColor: "#e8ebe5" }}>
-                <Image src={`/hero-library/${item.image}`} alt={item.title} fill sizes="(max-width: 600px) 46vw, (max-width: 1000px) 30vw, 19vw" style={{ objectFit: "cover" }} />
+            <article className="gallery-card" key={item.image}>
+              <div className="gallery-image-wrap">
+                <Image src={`/hero-library/${item.image}`} alt={item.title} fill sizes="(max-width: 600px) 46vw, (max-width: 1000px) 30vw, 19vw" />
                 <span className="gallery-index">{String(index + 1).padStart(2, "0")}</span>
               </div>
-              <div className="gallery-card-meta" style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, padding: "11px 10px 12px", backgroundColor: "#fff", color: "#111" }}><span style={{ flex: "0 0 48px", fontSize: 8, lineHeight: 1.4, letterSpacing: ".9px", color: "#111" }}>{item.category}</span><h3 style={{ flex: "1 1 auto", minWidth: 0, margin: 0, textAlign: "right", fontSize: 10, fontWeight: 500, lineHeight: 1.4, letterSpacing: ".3px", textTransform: "uppercase", color: "#111" }}>{item.title}</h3></div>
+              <div className="gallery-card-meta"><span>{item.category}</span><h3>{item.title}</h3></div>
             </article>
           ))}
         </div>
