@@ -55,7 +55,7 @@ export default function VisualThemesSection() {
           />
         ))}
       </div>
-      <p className={styles.note}>Gorsel duzenleme, urunun yapisina ve magazanizin gorsel diline gore sekillenir.</p>
+      <p className={styles.note}>Gorsel duzenleme, urunun yapisina ve magazanizin gorsel diline gore sekillenir. Gorseller, talep ettiginiz tarza uygun olarak yapay zeka araclarindan destek alinarak hazirlanir; surec ekibimiz tarafindan takip edilir, olasi kusurlar tarafimizca kontrol edilip duzeltilir.</p>
     </section>
   );
 }
